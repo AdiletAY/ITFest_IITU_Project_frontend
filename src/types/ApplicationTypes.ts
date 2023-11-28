@@ -2,46 +2,6 @@ import { categoryType, documentsType } from '@/types/documentType.ts';
 
 export type ApplicantType = {
   id: number;
-  group: {
-    id: number;
-    id_in_platonus: number;
-    name: string;
-  };
-  faculty: {
-    id: number;
-    id_in_platonus: string;
-    name_kz: string;
-    name_en: string;
-    name_ru: string;
-  };
-  cafedra: {
-    id: number;
-    id_in_platonus: number;
-    name_ru: string;
-    name_kz: string;
-    name_en: string;
-  };
-  profession: {
-    id: number;
-    id_in_platonus: number;
-    name_ru: string;
-    name_kz: string;
-    name_en: string;
-    profession_code: string;
-  };
-  study_form: {
-    id: number;
-    id_in_platonus: number;
-    name_ru: string;
-    name_kz: string;
-    name_en: string;
-  };
-  payment_form: {
-    id: number;
-    name_ru: string;
-    name_kz: string;
-    name_en: string;
-  };
   username: string;
   first_name: string;
   last_name: string;

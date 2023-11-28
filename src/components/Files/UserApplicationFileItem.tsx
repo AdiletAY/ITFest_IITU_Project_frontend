@@ -30,7 +30,7 @@ const UserApplicationFileItem = ({
   const handleFileUpdate = () => {
     setIsLoading(true);
     const formData = new FormData();
-    formData.append('uploaded_file', newFile);
+    formData.append('uploaded_document', newFile);
     formData.append('status', 'altered');
 
     axios
