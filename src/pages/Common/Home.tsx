@@ -28,7 +28,7 @@ const Home = () => {
       >
         {!categories?.length && (
           <span>
-            Currently there is no active category for academic mobility
+            Currently there is no active category
           </span>
         )}
 
