@@ -1,0 +1,13 @@
+:disabled,
+*:disabled,
+*[disabled='true'],
+*:disabled:before,
+*[disabled='true']:before,
+*:disabled:after,
+*[disabled='true']:after {
+  cursor: not-allowed !important;
+  pointer-events: visible !important;
+}
+.loading {
+  cursor: wait !important;
+}
