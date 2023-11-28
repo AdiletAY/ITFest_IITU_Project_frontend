@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { useTranslation } from 'react-i18next';
 import {
   Card,
   CardContent,
@@ -11,7 +10,6 @@ import CustomList from '@/components/ui/custom-list.tsx';
 import { Progress } from '@/components/ui/progress.tsx';
 import {
   HoverCard,
-  HoverCardContent,
   HoverCardTrigger,
 } from '@/components/ui/hover-card.tsx';
 import { GetMyProfileList } from '@/services/ListRenderData.tsx';
@@ -19,7 +17,6 @@ import { AuthContext } from '@/store/AuthStore.tsx';
 
 const MyProfile = () => {
   const user = useContext(AuthContext)?.user;
-  const { t } = useTranslation();
 
   return (
     <div className="flex items-center justify-center min-h-screen">
@@ -33,7 +30,7 @@ const MyProfile = () => {
           </CardTitle>
           {user?.iin && (
             <CardDescription className="text-center text-xs">
-              'uin': {user?.iin}
+              IIN: {user?.iin}
             </CardDescription>
           )}
         </CardHeader>
@@ -65,7 +62,7 @@ const MyProfile = () => {
               <HoverCardTrigger asChild className="mt-10">
                 <div className="cursor-help">
                   <p className="text-center w-full text-xl font-semibold select-none animate-bounce">
-                    'gpa': {user?.gpa}
+                    GPA: {user?.gpa}
                   </p>
                   <Progress
                     id="GPA"
